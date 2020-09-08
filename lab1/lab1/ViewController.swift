@@ -55,9 +55,17 @@ class ViewController: UIViewController {
             }
             
             instruction.text = conclusion
+            
+            door1_button.isEnabled = false
+            door2_button.isEnabled = false
+            door3_button.isEnabled = false
+            
         }
     }
    
+    @IBOutlet weak var door1_button: UIButton!
+    @IBOutlet weak var door2_button: UIButton!
+    @IBOutlet weak var door3_button: UIButton!
     @IBOutlet weak var instruction: UITextView!
     
     @IBOutlet weak var door1: UIImageView!

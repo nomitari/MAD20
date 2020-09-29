@@ -1,0 +1,54 @@
+//  Swift pseudocode for Stroop Test
+//  Naomi Tari 2020 ATLS 4120
+
+//  list to store results of each game round
+var selection_list = [Bool]()
+
+//  runs one 10-round game on the screen
+func gameRound()
+{
+    while # rounds <= 10
+    {
+        //  set up word
+        word = random choice from color words
+        word_color = random choice from colors
+        
+        //  set up color option buttons
+        button1_color = random choice from colors
+        button2_color = random choice from colors that wasn't used for button1
+        button3_color = random choice from colors that wasn't used for button1 or button2
+        button4_color = random choice from colors that wasn't used for button1, button2, or button3
+  
+        display word in view
+        display color buttons in view
+        start timer for 2 sec
+    }
+}
+
+//  gets result of a single round – will be called 10 times per game
+func getRoundResult( button sender)
+{
+    if sender color == word_color
+    {
+        selection_list.append( true )
+    }
+    else
+    {
+        selection_list.append( false )
+    }
+}
+
+//  calculates final score for player
+func getScore( [ selection_list ] )
+{
+    //  selection_list contains 10 bools that represent success (1) or failure (0) per round
+    return ( # of successes in selection_list / length of selection_list ) 
+}
+
+
+
+
+
+
+
+

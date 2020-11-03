@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">lab7</string>
+    <string name="buttonText">submit</string>
+    <string name="editName">Name</string>
+    <string name="imageDesc">woman waving</string>
+</resources>

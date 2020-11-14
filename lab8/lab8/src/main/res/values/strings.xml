@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">lab8</string>
+    <string name="heading">Calculate</string>
+    <string name="addCalc">add</string>
+    <string name="multCalc">multiply</string>
+    <string name="firstCheck">22</string>
+    <string name="secondCheck">-8</string>
+    <string name="thirdCheck">0</string>
+    <string name="fourthCheck">61</string>
+    <string name="signSwitch">change sign</string>
+    <string name="calcButton">calculate</string>
+    <string-array name="color">
+        <item>black</item>
+        <item>green</item>
+        <item>blue</item>
+    </string-array>
+
+</resources>

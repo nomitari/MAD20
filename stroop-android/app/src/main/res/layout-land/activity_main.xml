@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:tag="0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:background="@android:color/transparent"
+            android:freezesText="true"
+            android:onClick="play"
+            android:text="@string/stroopButton"
+            android:textColor="#000"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="257dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:background="#FFFFFF"
+            android:text="@string/instructions"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playButton"
+            android:freezesText="true" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="36dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="295dp"
+            android:onClick="exit"
+            android:paddingLeft="0dp"
+            android:paddingTop="1dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/exit"
+            app:layout_constraintEnd_toStartOf="@+id/topLeftColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/topLeftColor"
+            android:layout_width="165dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="68dp"
+            android:contentDescription="@string/buttonDesc"
+            android:onClick="colorClick"
+            app:layout_constraintBottom_toTopOf="@+id/bottomLeftColor"
+            app:layout_constraintEnd_toStartOf="@+id/topRightColor"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green" />
+
+        <ImageButton
+            android:id="@+id/bottomLeftColor"
+            android:layout_width="165dp"
+            android:layout_height="142dp"
+            android:layout_marginStart="290dp"
+            android:contentDescription="@string/buttonDesc"
+            android:onClick="colorClick"
+            android:tag="2"
+            app:layout_constraintEnd_toStartOf="@+id/bottomRightColor"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topLeftColor"
+            app:srcCompat="@drawable/blue" />
+
+        <ImageButton
+            android:id="@+id/bottomRightColor"
+            android:layout_width="163dp"
+            android:layout_height="142dp"
+            android:contentDescription="@string/buttonDesc"
+            android:onClick="colorClick"
+            android:tag="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bottomLeftColor"
+            app:layout_constraintTop_toBottomOf="@+id/topRightColor"
+            app:srcCompat="@drawable/yellow" />
+
+        <ImageButton
+            android:id="@+id/topRightColor"
+            android:layout_width="163dp"
+            android:layout_height="129dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="68dp"
+            android:contentDescription="@string/buttonDesc"
+            android:onClick="colorClick"
+            android:tag="1"
+            app:layout_constraintBottom_toTopOf="@+id/bottomRightColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/topLeftColor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/red" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

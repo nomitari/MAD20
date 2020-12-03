@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Stroop Test</string>
+    <string name="heading">STROOP TEST</string>
+    <string name="stroopButton">PLAY</string>
+    <string name="stroopButtonAgain">PLAY AGAIN</string>
+    <string name="instructions">Select the color below represented by the written word!</string>
+    <string name="score">"Your score: "</string>
+    <string name="exit">x</string>
+    <string name="buttonDesc">color button</string>
+    <string name="none"> </string>
+</resources>
